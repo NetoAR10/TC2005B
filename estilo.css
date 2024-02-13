@@ -1,0 +1,14 @@
+/* selector de etiqueta */
+body {
+    color: blue;
+}
+
+/*selector de clase */
+.red {
+    color: red;
+}
+
+/*selector de id */
+#diamantes {
+    color: cyan;
+}

@@ -8,6 +8,10 @@ body {
     color: red;
 }
 
+.black {
+    color: black;
+}
+
 /*selector de id */
 #diamantes {
     color: cyan;

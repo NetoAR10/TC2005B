@@ -8,52 +8,78 @@ console.assert(1==2);
 
 
 // variables, constantes
-
-
-
-// Alcance de las variables
-
+var juego = "Minecraft"; //forma antigua e insegura
+const precio = 50; //constante
+let cantidad = 1; //forma moderna y segura
 
 
 // alert, prompt, confirm
+alert("Hola mundo de maincra");
+const nombre = prompt("¿Cómo te llamas?");
+console.log("Hola " + nombre);
+const hambre = confirm("¿Tienes hambre?");
+
+if (hambre) {
+    console.log("Es hora de desayunar");
+} else {
+    console.log("Sigamos trabajando");
+}
 
 
 // funciones tradicionales
+function construir() {
+    console.log("Construyendo casa");
+};
+construir();
 
 
 // funciones modernas
+const casa = () => {
+    console.log("Construyendo casa anónima");
+};
+
+const desayuno = (comida) => {
+    console.log("El desayuno de hoy es " + comida);
+};
+
+desayuno("huevitos");
 
 
 // arreglos
-
-
-//const arreglo = ["Elemento"];
-
-
-//const arreglo = new Array() 
-
-
-//arreglo.push("Otro elemento");
-
-
-//arreglo[10] = "Uno más";
+const arreglo = ["Elemento"];
+const arreglo_2 = new Array(); 
+arreglo.push("Otro elemento");
+arreglo.push(5);
+arreglo[10] = "Uno más";
+console.log(arreglo);
 
 
 //arreglos asociativos
+arreglo["dos"] = 8;
+console.log(arreglo);
 
 
 //recorrido tradicional del arreglo
-//for (let i = 0; i < arreglo.length; i++) {
-//    console.log(arreglo[i]);
-//}
+for (let i = 0; i < arreglo.length; i++) {
+    console.log(arreglo[i]);
+};
 
 
 //recorridos alternativos del arreglo
-//for(let posicion in arreglo) {
-//    console.log(posicion);
-//}
+for(let posicion of arreglo) {
+    console.log(posicion);
+};
 
 
 //Objetos
-//const objeto = {} 
+const objeto = {atributo: "valor", atributo2: "valor2"};
+objeto.atributo3 = 5;
+console.log(objeto);
+
+for(let atributo in objeto) {
+    console.log(atributo)
+};
+
+
 // modificar html
+document.write("hola");

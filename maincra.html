@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Minecraft</title>
-        <link rel="stylesheet" href="estilo.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     </head>
     <body>
-        <hi class="red">Hola mundo de Minecraft!</hi>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://bulma.io">
+                <img src="https://i.pinimg.com/550x/82/b2/1f/82b21fe6d9166c673eed585a5fc38ef5.jpg" width="112" height="28">
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item">
+                  Home
+                </a>
+          
+                <a class="navbar-item">
+                  Documentation
+                </a>
+          
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    More
+                  </a>
+          
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                      About
+                    </a>
+                    <a class="navbar-item">
+                      Jobs
+                    </a>
+                    <a class="navbar-item">
+                      Contact
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Report an issue
+                    </a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-primary">
+                      <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <section>
+            <hi class="title">Hola mundo de Minecraft!</hi>
 
         <table>
             <thead>
@@ -21,8 +84,10 @@
             </tfoot>
 
         </table>
+        </section>
+        
 
-        <h2 class="black">Preguntas a responder</h2>
+        <h2 class="black">Preguntas a responder lab 3</h2>
         <p class="black">Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS?</p>
         <p>Debido al poder del !important, mi recomendación es solo usarlo cuando sea absolutamente necesario como en situaciones de emergencia o correciones rápidas.</p>
 
@@ -35,6 +100,33 @@
         <p class="black">¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</p>
         <p>Porque elimina espacios en blanco, comentarios y caracteres innecesarios y asi el archivo CSS que se debe descargar por el navegador es más pequeño.</p>
 
+
+        <h2 class="black">Preguntas a responder lab 4</h2>
+        <p class="black">¿Qué diferencias y semejanzas hay entre Java y JavaScript?</p>
+        <p>Java es un lenguaje de propósito general y JavaScript es un lenguaje de secuancias de comandos para páginas web.</p>
+
+        <p class="black">¿Qué métodos tiene el objeto Date?</p>
+        <p>"getDate()" "getMonth()" "getFullYear()" "getHours()" "getTime()"</p>
+
+        <p class="black">¿Qué métodos tienen los arreglos?</p>
+        <p>"push()" "pop()" "splice()" "slice()" "forEach()"</p>
+
+        <p class="black">¿Cómo se declara una variable con alcance local dentro de una función?</p>
+        <p>Usando "let"</p>
+
+        <p class="black">¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</p>
+        <p>Puede aumentar la posibilidad de errores ya que diferentes partes del código pueden modificar ese tipo de varibles.</p>
+
         <script src="intro_js.js"></script>
     </body>
+    ML
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </p>
+  </div>
+</footer>
 </html>

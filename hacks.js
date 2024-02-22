@@ -35,4 +35,5 @@ const server = http.createServer( (request, response) => {
     response.end();
 });
 
+//usar en nav localhost:3000
 server.listen(3000);

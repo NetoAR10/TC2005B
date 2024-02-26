@@ -29,6 +29,17 @@ console.log("esto se imprime antes de los numeros");
 const http = require('http');
 
 const server = http.createServer( (request, response) => {
+    if (request.url == '/') {
+        //codigo html de construir
+
+    } else if (request.url == '/construir') {
+        //codigo html de construir
+
+    } else {
+        //devolver codigo de respuesta pra recurso no encontrado
+        response.statusCode = 404;
+        response.end();
+    }
     console.log(request.url);
     response.setHeader('Content-Type', 'text/html');
     response.write("hola mundo desde node");

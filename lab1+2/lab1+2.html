@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pequeño Sitio</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi sitio personal</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre_mi">Sobre Mí</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#preguntas">Preguntas a responder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre_mi">
+        <h2>Sobre Mí</h2>
+        <p>Soy un estudiante del Tec de Monterrey en Querétaro de la carrera ITC.</p>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li><strong>Hobby 1:</strong> Jugar videojuegos. Esto incluye jugarlos, ver videos al respecto como análisis, ensayos y streams.</li>
+            <li><strong>Hobby 2:</strong> Hacer ejercicio. Voy principalmente al gym pero he jugado deportes como fútbol, tenis, pádel, volleyball y baseball.</li>
+            <li><strong>Hobby 3:</strong> Ver series. Me gusta el anime y las series de drama.</li>
+        </ul>
+    </section>
+
+    <section id="preguntas">
+        <h2>Preguntas a responder</h2>
+            <p>¿Cuál es la diferencia entre Internet y la World Wide Web?</p>
+            <p>Internet es una red global de redes de computadoras interconectadas que permite la comunicación entre dispositivos en todo el mundo.
+                La World Wide Web es un servicio en línea que se ejecuta en Internet y que permite acceder y visualizar información a través de documentos multimedia enlazados entre sí, utilizando tecnologías como HTTP, HTML y URL.<br> 
+            </p>
+
+            <p>¿Cuáles son las partes de un URL?</p>
+            <p>Protocolo: Indica el protocolo de comunicación a utilizar, como HTTP, HTTPS, FTP, etc.<br>
+                Dominio: Dirección del sitio web al que se está accediendo.<br>
+                Puerto (opcional): Número de puerto utilizado para la comunicación. Por defecto, HTTP usa el puerto 80 y HTTPS usa el puerto 443.<br>
+                Ruta: Especifica la ubicación específica del recurso en el servidor.<br>
+                Parámetros (opcional): Información adicional que se pasa al servidor.<br>
+                Fragmento (opcional): Sección específica dentro del recurso.<br>
+            </p>
+
+            <p>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</p>
+            <p>GET: Solicita datos del servidor.<br>
+                HEAD: Solicita encabezados de respuesta del servidor, sin el cuerpo del mensaje.<br>
+                POST: Envía datos al servidor para ser procesados.<br>
+                PUT: Reemplaza todos los datos de un recurso existente en el servidor.<br>
+                PATCH: Modifica parcialmente un recurso existente en el servidor.<br>
+                DELETE: Elimina un recurso del servidor.<br>
+            </p>
+
+            <p>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</p>
+            <p>El método POST se utiliza para enviar datos sensibles como contraseñas a través de formularios HTML, ya que los datos se envían en el cuerpo de la solicitud, no en la URL.<br>
+            </p>
+
+            <p>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</p>
+            <p>Normalmente se utiliza el método GET para solicitar la página y sus recursos asociados.</p>
+
+            <p>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</p>
+            <p>Un código de respuesta 200 significa "OK". Indica que la solicitud fue exitosa y el servidor ha devuelto correctamente el contenido solicitado.<br></p>
+
+            <p>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</p>
+            <p>Sí, es responsabilidad del desarrollador corregir un error 404, ya que indica que el recurso solicitado no se pudo encontrar en el servidor.</p>
+
+            <p>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</p>
+            <p>Sí, es responsabilidad del desarrollador corregir un error 500, ya que indica un error interno del servidor que impide que se complete la solicitud del cliente.</p>
+
+            <p>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</p>
+            <p>Un atributo HTML5 desaprobado significa que su uso se desaconseja y puede ser eliminado en futuras versiones de HTML. Algunos elementos de HTML 4 desaprobados en HTML5 incluyen "font", "center", y "strike".</p>
+
+            <p>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</p>
+            <p>HTML5 introduce nuevos elementos semánticos como "header", "footer", "nav", etc.<br>
+                Admite reproducción de audio y video nativa.<br>
+                Introduce APIs para geolocalización, almacenamiento local, y canvas para gráficos.</p>
+
+            <p>¿Qué componentes de estructura y estilo tiene una tabla?</p>
+            <p>Estructura: "table", "tr", "td", "th".<br>
+                Estilo: Puede aplicarse mediante CSS para cambiar la apariencia de la tabla, celdas, bordes, etc.</p>
+
+            <p>¿Cuáles son los principales controles de una forma HTML5?</p>
+            <p>"input" (text, password, checkbox, radio, etc.).<br>
+                "textarea" para áreas de texto más grandes.<br>
+                "select" para listas desplegables.<br>
+                "button" para botones de envío u otros botones de acción.<br>
+                "label" para etiquetar los controles y mejorar la accesibilidad.</p>
+
+            <p>¿Qué tanto soporte HTML5 tiene el navegador que utilizas?</p>
+            <p>Google Chrome es conocido por ser uno de los navegadores que mejor soporta las especificaciones de HTML5.</p>
+
+            <p>¿Cuál es el ciclo de vida de los sistemas de información?</p>
+            <p>Identificación de necesidades: Se identifican y definen las necesidades del usuario y de la organización que el sistema de información debe abordar.<br>
+                Análisis: Se analizan detalladamente los requisitos y se definen las funciones, características y restricciones del sistema.<br>
+                Diseño: Se crea una arquitectura técnica y de software detallada para el sistema, incluidos los diagramas de flujo, las bases de datos y la interfaz de usuario.<br>
+                Implementación: Se codifica, prueba e implementa el sistema de información en el entorno de producción.<br>
+                Operación y mantenimiento: Se realiza el mantenimiento del sistema, se proporciona soporte continuo y se realizan actualizaciones y mejoras según sea necesario.<br>
+                Retiro y reemplazo: En algún momento, el sistema puede ser retirado debido a la obsolescencia, la falta de soporte o la necesidad de una tecnología más avanzada.</p>
+
+            <p>¿Cuál es el ciclo de desarrollo de sistemas de información?</p>
+            <p>Planificación: Se define el alcance del proyecto, se establecen los objetivos y se elabora un plan de proyecto.<br>
+                Análisis de requisitos: Se recopilan y documentan los requisitos del usuario y del sistema.<br>
+                Diseño del sistema: Se diseña la arquitectura del sistema, la base de datos, la interfaz de usuario y otros componentes técnicos.<br>
+                Desarrollo e implementación: Se codifica, prueba y despliega el sistema en un entorno de producción.<br>
+                Pruebas: Se realizan pruebas exhaustivas para garantizar que el sistema cumpla con los requisitos y funcione correctamente.<br>
+                Mantenimiento: Se proporciona soporte continuo, se corrigen errores y se realizan actualizaciones según sea necesario.</p>
+
+    </section>
+
+    <footer>
+        <p>Desarrollado por: Ernesto Acosta - Matrícula: A01364982 - Correo electrónico: A01364982@tec.mx</p>
+        <p>Este sitio fue creado utilizando HTML5 y Visual Studio Code
+    </footer>
+</body>
+</html>

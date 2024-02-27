@@ -6,7 +6,7 @@ for(let i = 1; i <= num_tabla; i++) {
     res += "El numero al cuadrado de " + i + " es: " + i*i + " y el cubo es: " + i*i*i + "\n";
 }
 
-document.getElementById('prob1').textContent = res;
+document.getElementById('prob1').innerText = res;
 
 
 //Problema 2

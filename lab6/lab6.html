@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validador de Contraseñas</title>
+<link rel="stylesheet" href="lab6.css">
+</head>
+<body>
+
+<div class="container">
+  <h2 onmouseover="changeTitleStyle(this)">Validador de Contraseñas</h2>
+  <form id="passwordForm">
+    <div class="form-group">
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" required onfocus="showHelp('password')">
+      <span id="passwordHelp" class="help-message"></span>
+    </div>
+    <div class="form-group">
+      <label for="confirmPassword">Verificar Contraseña:</label>
+      <input type="password" id="confirmPassword" required onfocus="showHelp('confirmPassword')">
+      <span id="confirmPasswordHelp" class="help-message"></span>
+    </div>
+    <div id="passwordMatchMessage">
+        <!-- Mensaje de coincidencia de contraseña aquí -->
+    </div>
+    <button id="res">Validar Contraseña</button>
+</form>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div>
+    <h1>Preguntas a responder lab 6</h1>
+    <h3>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</h3>
+    <p>Porque mejora la experiencia del usuario al darle feedback inmediato, reduce la carga del servidor al no hacerle peticiones inecesarias con datos erroneos y sirve como validación inicial para garantizar seguridad.</p>
+    <h3>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</h3>
+    <p>Al deshabilitar javascript como usuario en el navegador, manipulando el codigo de javascript mediante herramientas de desarrollo del navegador o incluse enviando peticiones HTTP alteradas directamentre al servidor evitando así las validaciones del cliente.</p>
+    <h3>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</h3>
+    <p>Porque aún puede servir como capa de seguridad, filtra inputs no maliciosos como errores honestos de los usuarios y proporciona una experiencia de usuario más rápida y efectiva.</p>
+</div>
+
+<script src="lab6.js"></script>
+</body>
+</html>

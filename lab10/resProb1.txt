@@ -1,0 +1,5 @@
+El numero al cuadrado de 1 es: 1 y el cubo es: 1
+El numero al cuadrado de 2 es: 4 y el cubo es: 8
+El numero al cuadrado de 3 es: 9 y el cubo es: 27
+El numero al cuadrado de 4 es: 16 y el cubo es: 64
+El numero al cuadrado de 5 es: 25 y el cubo es: 125

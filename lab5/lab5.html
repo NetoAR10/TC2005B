@@ -3,59 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convertidor de Temperatura</title>
+    <title>Laboratorio 5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-    <h2>Tabla con los números del 1 al número dado con sus cuadrados y cubos</h2>
-    <div id="prob1"></div>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              Home
+            </a>
+      
+            <a class="navbar-item">
+              Documentation
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Problemas
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  Problema 1
+                </a>
+                <a class="navbar-item">
+                  Problema 2
+                </a>
+                <a class="navbar-item">
+                  Problema 3
+                </a>
+                <a class="navbar-item">
+                    Problema 4
+                </a>
+                <a class="navbar-item">
+                    Problema 5
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Convertidor de Temperatura
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="section">
+        <div class="container">
+            <div class="field">
+                <label class="label" id="pregunta1">Tabla con los números del 1 al número dado con sus cuadrados y cubos</label>
+                <div class="control">
+                    <input class="input" type="text" id="respuestaUsuario1"  placeholder="Introduce un número" name="respuesta1" required>
+                </div>
+            </div>
+            <div class="control">
+                <button class="button is-primary" id="enviarRespuesta1">Enviar</button>
+            </div>
+            <ul id="resultado1" class="notification is-hidden"></ul>
+        </div>
+    </div>
 
-    <h2>Resultado de la suma</h2>
-    <div id="prob2"></div>
-    <div id ="prob2_1"></div>
+    <div class="section">
+        <div class="container">
+          <div class="field">
+            <label class="label" id="pregunta2">¿Cuál es el resultado de la suma?</label>
+            <div class="control">
+              <input class="input" type="text" id="respuestaUsuario2" placeholder="Introduce un número" name="respuesta2" required>
+            </div>
+          </div>
+          <div class="control">
+            <button id="enviarRespuesta2" class="button is-primary">Enviar</button>
+          </div>
+          <div id="resultado2" class="notification is-hidden"></div>
+        </div>
+    </div>
 
-    <h2>Contador</h2>
-    <div id ="prob3"></div>
-    <div id ="prob3_1"></div>
-    <div id ="prob3_2"></div>
+    <div class="section">
+        <div class="container">
+          <div class="field">
+            <label class="label" id="pregunta3">Introduce 10 valores:</label>
+            <div class="control">
+              <input class="input" type="text" id="valorInput" required>
+            </div>
+          </div>
+          <div class="control">
+            <button class="button is-link" id="agregarValor">Agregar Valor</button>
+            <button class="button is-primary" id ="enviarRespuesta3">Enviar</button>
+          </div>
+          <div>
+            <ul id="listaValores" class="notification is-hidden"></ul>
+            <ul id="respuesta3" class="notification is-hidden"></ul>
+          </div>
+        </div>
+    </div>
 
-    <h2>Promedios</h2>
-    <div id="prob4"></div>
+    <div class="section">
+        <div class="container">
+          <div class="field">
+            <label class="label" id="pregunta4">Introduce 9 valores:</label>
+            <div class="control">
+              <input class="input" type="text" id="respuestaUsuario4" required>
+            </div>
+          </div>
+          <div class="control">
+            <button class="button is-link" id="agregarValor2">Agregar Valor</button>
+          </div>
+          <div>
+            <ul id="listaValores" class="notification is-hidden"></ul>
+            <ul id="respuesta4" class="notification is-hidden"></ul>
+          </div>
+        </div>
+    </div>
 
-    <h2>Inverso</h2>
-    <div id="prob5"></div>
+    <div class="section">
+        <div class="container">
+            <div class="field">
+                <label class="label" id="pregunta5">Ingresa un número para invertir</label>
+                <div class="control">
+                    <input class="input" type="text" id="respuestaUsuario5"  placeholder="Introduce un número" name="respuesta5" required>
+                </div>
+            </div>
+            <div class="control">
+                <button class="button is-primary" id="enviarRespuesta5">Enviar</button>
+            </div>
+            <ul id="resultado5" class="notification is-hidden"></ul>
+        </div>
+    </div>
 
-    <h2>Convertidor de Temperatura</h2>
-    <input type="number" id="inputTemp" placeholder="Ingresa la temperatura">
-    <select id="inputUnit">
-        <option value="C">Celsius</option>
-        <option value="F">Fahrenheit</option>
-        <option value="K">Kelvin</option>
-    </select>
-    a
-    <select id="outputUnit">
-        <option value="C">Celsius</option>
-        <option value="F">Fahrenheit</option>
-        <option value="K">Kelvin</option>
-    </select>
-    <button onclick="convertirTemperatura()">Convertir</button>
-    <div id="result"></div>
+    <div class="section">
+        <div class="container">
+            <label class="label" id="pregunta6">Convertidor de temperatura</label>
+                <div class="field has-addons">
+                    <div class="control">
+                        <input class="input" type="text" id="respuestaUsuario6"  placeholder="Ingresa la temperatura" name="respuesta6" required>
+                    </div>
+                    <div class="select is_primary" id="input">
+                        <select id="inputTemp">
+                            <option value="C">Celcius</option>
+                            <option value="F">Fahrenheit</option>
+                            <option value="K">Kelvin</option>
+                        </select>
+                    </div>
+                    <p>a</p>
+                    <div class="select is_primary" id="output">
+                        <select id="outputTemp">
+                            <option value="C">Celcius</option>
+                            <option value="F">Fahrenheit</option>
+                            <option value="K">Kelvin</option>
+                        </select>
+                    </div>
+                </div>
+            <div class="control">
+                <button class="button is-primary" id="enviarRespuesta6">Convertir</button>
+            </div>
+            <div id="resultado6" class="notification is-hidden"></div>
+        </div>
+    </div>
 
-    <h2 class="black">Preguntas a responder lab 4</h2>
-        <p class="black">¿Qué diferencias y semejanzas hay entre Java y JavaScript?</p>
-        <p>Java es un lenguaje de propósito general y JavaScript es un lenguaje de secuancias de comandos para páginas web.</p>
+    <div class="content">
+        <h1 class="title is-2">Preguntas a responder lab 5</h1>
+        <h3 class="title is-3">Describe Material design</h3>
+        <p>Material Design es una guía de diseño desarrollada por Google en 2014 con
+             el objetivo de unificar el estilo visual y las interacciones de los productos
+             y plataformas digitales. Se inspira en el mundo real, utilizando efectos visuales
+             que reflejan las texturas y las sombras de los objetos físicos, pero con un enfoque
+             simplificado y moderno.</p>
+    </div>
 
-        <p class="black">¿Qué métodos tiene el objeto Date?</p>
-        <p>"getDate()" "getMonth()" "getFullYear()" "getHours()" "getTime()"</p>
-
-        <p class="black">¿Qué métodos tienen los arreglos?</p>
-        <p>"push()" "pop()" "splice()" "slice()" "forEach()"</p>
-
-        <p class="black">¿Cómo se declara una variable con alcance local dentro de una función?</p>
-        <p>Usando "let"</p>
-
-        <p class="black">¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</p>
-        <p>Puede aumentar la posibilidad de errores ya que diferentes partes del código pueden modificar ese tipo de varibles.</p>
-
-    <script src="lab4.js"></script>
+    <script src="lab5.js"></script>
 </body>
 </html>

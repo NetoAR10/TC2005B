@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.3",
+    "nodemon": "^3.1.0"
+  },
+  "name": "tc2005b",
+  "description": "Proyecto compañero del curso TC2005B grupo 2",
+  "version": "1.0.0",
+  "main": "lab11.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon ./lab11/lab11.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NetoAR10/TC2005B.git"
+  },
+  "keywords": [
+    "tc2005b"
+  ],
+  "author": "Ernesto Acosta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NetoAR10/TC2005B/issues"
+  },
+  "homepage": "https://github.com/NetoAR10/TC2005B#readme"
+}

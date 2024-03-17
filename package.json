@@ -1,16 +1,16 @@
 {
   "dependencies": {
     "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
     "express": "^4.18.3",
     "nodemon": "^3.1.0"
   },
   "name": "tc2005b",
   "description": "Proyecto compañero del curso TC2005B grupo 2",
   "version": "1.0.0",
-  "main": "lab11.js",
-  "devDependencies": {},
+  "main": "lab12.js",
   "scripts": {
-    "start": "nodemon ./lab11/lab11.js",
+    "start": "nodemon ./lab12/lab12.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

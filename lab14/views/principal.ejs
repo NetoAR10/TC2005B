@@ -1,0 +1,23 @@
+<%- include('includes/head.ejs', {username: username}) %>
+
+<h1 class="title">HEWO</h1>
+
+    <% for (let respuesta of respuestas) { %>
+        
+        <div class="column">
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                    Usted introdujo = <%= respuesta.input_usuario %> <br>
+                    La respuesta dada es = <%= respuesta.output_problema %> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    <% } %>
+
+<% if (ultima_respuesta != '') { %>
+    <div>La última respuesta fue <%= ultima_respuesta %>.</div>
+<% } %>
+
+<%- include('includes/foot.ejs') %>

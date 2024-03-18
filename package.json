@@ -8,9 +8,9 @@
   "name": "tc2005b",
   "description": "Proyecto compañero del curso TC2005B grupo 2",
   "version": "1.0.0",
-  "main": "lab12.js",
+  "main": "lab13.js",
   "scripts": {
-    "start": "nodemon ./lab12/lab12.js",
+    "start": "nodemon ./lab13/lab13.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

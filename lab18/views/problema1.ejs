@@ -1,0 +1,23 @@
+<%- include('includes/head.ejs') %>
+
+<h1 class="title">Problema 1</h1>
+
+<div class="section">
+    <div class="container">
+        <div class="field">
+        <form action="/principal/problema1" method="POST">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
+            <label class="label" for="respuesta1">Tabla con los números del 1 al número dado con sus cuadrados y cubos</label>
+            <div class="control">
+                <input class="input" type="text" id="respuesta1"  placeholder="Introduce un número" name="respuesta1" required>
+            </div>
+        </div>
+        <div class="control">
+            <button class="button is-primary" type="submit" value="Res1">Enviar</button>
+        </div>
+        <ul id="resultado1" class="notification is-hidden"></ul>
+    </div>
+</div>
+
+
+<%- include('includes/foot.ejs') %>

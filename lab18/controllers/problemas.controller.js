@@ -3,6 +3,7 @@ const Respuesta = require('../models/respuestas.model');
 exports.get_problema1 = (request, response, next) => {
     response.render('problema1', {
         username: request.session.username || '',
+        csrfToken: request.csrfToken(),
     });
 };
 
@@ -52,7 +53,7 @@ exports.get_problema3 = (request, response, next) => {
 };
 
 
-exports.post_problema2 = (request, response, next) => {
+exports.post_problema3 = (request, response, next) => {
     console.log(request.body.respuesta3);
 };
 
@@ -62,7 +63,7 @@ exports.get_problema4 = (request, response, next) => {
 };
 
 
-exports.post_problema2 = (request, response, next) => {
+exports.post_problema4 = (request, response, next) => {
     console.log(request.body.respuesta4);
 };
 
@@ -72,7 +73,7 @@ exports.get_problema5 = (request, response, next) => {
 };
 
 
-exports.post_problema2 = (request, response, next) => {
+exports.post_problema5 = (request, response, next) => {
     console.log(request.body.respuesta5);
 };
 
@@ -82,7 +83,7 @@ exports.get_problema6 = (request, response, next) => {
 };
 
 
-exports.post_problema2 = (request, response, next) => {
+exports.post_problema6 = (request, response, next) => {
     console.log(request.body.respuesta6);
 };
 

@@ -1,0 +1,25 @@
+<%- include('includes/head.ejs') %>
+
+<h1 class="title">Problema 3</h1>
+
+<div class="section">
+    <div class="container">
+      <div class="field">
+        <label class="label" id="pregunta3">Introduce 10 valores:</label>
+        <div class="control">
+          <input class="input" type="text" id="valorInput" required>
+        </div>
+      </div>
+      <div class="control">
+        <button class="button is-link" id="agregarValor">Agregar Valor</button>
+        <button class="button is-primary" id ="enviarRespuesta3">Enviar</button>
+      </div>
+      <div>
+        <ul id="listaValores" class="notification is-hidden"></ul>
+        <ul id="respuesta3" class="notification is-hidden"></ul>
+      </div>
+    </div>
+</div>
+
+
+<%- include('includes/foot.ejs') %>
